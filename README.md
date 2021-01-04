@@ -2,6 +2,18 @@
 We will look briefly at the LINUX command interpreter, called the SHELL, which, although not part of the operating system, makes heavy use of many operating system features and thus serves as a good example of how the system calls can be used. It is also the primary interface between a user sitting at his terminal and the operating system.
 Shell has standard input and output as its terminal. Shell is started when a user begins to login. To start a command a dollar sign is typed which indicates the user that the shell is ready to accept the command.
 
+## How it work
+1. take user input 
+2. allocate memory for user input 
+3. create a child process using fork () command 
+4. execute the input command if valid (in the child process). Parent will wait for the completion of child process 
+5. child process uses execvp() to transform user input into Linux command, and execute it 
+6. Return to step 1 when success 
+7. Use if else for exception handling. Ex: Special case is “cd” command will not work with the C Unix Shell, allocation fail, fail to create child process, fail to execute Linux command... 
+8. The purpose of the program is running Linux system command using my own shell (c code) and practicing child and parent process in Linux Shell. User input is the parent process, Linux commands execute is the child process. Please look at my diagram for further verification:
+
+![alt](https://github.com/jackyhuynh/linuxShell-app/blob/main/src/picture/Diagram.png)
+
 ## Technology
 - C Programming
 - g++ compiler
@@ -32,18 +44,15 @@ Linux Ubuntu 18.4 LTS
 
 Explain how to run the automated tests for this system:
 * [Linux Compilers](https://askubuntu.com/questions/61408/what-is-a-command-to-compile-and-run-c-programs#:~:text=The%20simplest%20way%20to%20compile%20a%20C%2B%2B%20program,only%20compiler%20capable%20of%20compiling%20the%20Linux%20kernel.)- Locate the home folder that contain the program (by using the cd command). Call the g++ compiler and execute.
-* [Visual Studio Command Line](https://docs.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-160
-)
+* [Visual Studio Command Line](https://docs.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-160)
+
 ### Result
+
 ![alt](https://github.com/jackyhuynh/multithreadingMatrixMultiply-app/blob/main/src/1.png)
-
-
-### Operation Diagram
-![alt](https://github.com/jackyhuynh/multithreadingMatrixMultiply-app/blob/main/src/2.png)
 
 ## Deployment
 
-Can be deploy to any embedded system without any problem. Can also make API or libary using this. 
+Can be deploy to any embedded system without any problem. Can also make API or libary using this code. 
 
 ## Built With
 
