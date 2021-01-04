@@ -1,15 +1,18 @@
-# Multi Threading Matrix Multiplication 
-Multi Threading Matrix Multiplication implemented ptherad and perform matrix multiplication between two matrices. In this senario, I will test the program with matrices size 10 x 10, 100 x 100, 500 x 500, 1000 x 1000, and 2000 x 2000 in No thread vs multi threads (10 threads, 100 threads, 1000 threads, 2000 threads )
+# Linux Shell
+We will look briefly at the LINUX command interpreter, called the SHELL, which, although not part of the operating system, makes heavy use of many operating system features and thus serves as a good example of how the system calls can be used. It is also the primary interface between a user sitting at his terminal and the operating system.
+Shell has standard input and output as its terminal. Shell is started when a user begins to login. To start a command a dollar sign is typed which indicates the user that the shell is ready to accept the command.
 
 ## Technology
-C , Memory Management, Multthreading (pthread)
+- C Programming
+- g++ compiler
+- readline.h
+- Multthreading (pthread)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 What things you need to install the software and how to install them
-
 - Command-Prompt for Visual Studio: Same go here. For this particular project, I highly recommend using Command-Prompt instead of the IDE.
 - Linux: Program can be run on Linux System (if you familiar with Linux command line). 
 
