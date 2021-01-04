@@ -48,7 +48,7 @@ Explain how to run the automated tests for this system:
 
 ### Result
 
-![alt](https://github.com/jackyhuynh/multithreadingMatrixMultiply-app/blob/main/src/1.png)
+![alt](https://github.com/jackyhuynh/linuxShell-app/blob/main/src/picture/TrucShell.PNG)
 
 ## Deployment
 
