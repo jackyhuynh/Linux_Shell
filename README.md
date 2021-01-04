@@ -21,8 +21,7 @@ What things you need to install the software and how to install them
 
 A step by step series of examples that tell you how to get a development env running
 
- Visual Studio & Command-Prompt for Visual Studio:
-
+Visual Studio & Command-Prompt for Visual Studio:
 * [Install Visual Studio](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-160#:~:text=Visual%20Studio%202019%20Installation%201%20Make%20sure%20your,...%204%20Choose%20workloads.%20...%20More%20items...) - If you haven't downloaded and installed Visual Studio and the Microsoft C/C++ tools yet, here's how to get started.
 * [Developer Command Prompt for Visual Studio](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs#:~:text=%20Developer%20Command%20Prompt%20for%20Visual%20Studio%20,from%20inside%20Visual%20Studio.%20For%20easier...%20More) - Developer Command Prompt for Visual Studio enables you to use .NET Framework tools more easily. It's a command prompt that automatically sets specific environment variables. After opening Developer Command Prompt, you can enter the commands for .NET Framework tools such as ildasm or clrver.
 
@@ -35,9 +34,11 @@ Explain how to run the automated tests for this system:
 * [Linux Compilers](https://askubuntu.com/questions/61408/what-is-a-command-to-compile-and-run-c-programs#:~:text=The%20simplest%20way%20to%20compile%20a%20C%2B%2B%20program,only%20compiler%20capable%20of%20compiling%20the%20Linux%20kernel.)- Locate the home folder that contain the program (by using the cd command). Call the g++ compiler and execute.
 * [Visual Studio Command Line](https://docs.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-160
 )
-## Test Result
-
+### Result
 ![alt](https://github.com/jackyhuynh/multithreadingMatrixMultiply-app/blob/main/src/1.png)
+
+
+### Operation Diagram
 ![alt](https://github.com/jackyhuynh/multithreadingMatrixMultiply-app/blob/main/src/2.png)
 
 ## Deployment
