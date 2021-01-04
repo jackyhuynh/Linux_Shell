@@ -18,7 +18,7 @@ Shell has standard input and output as its terminal. Shell is started when a use
 - C Programming
 - g++ compiler
 - readline.h
-- Multthreading (pthread)
+- Mulithreading (pthread)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
