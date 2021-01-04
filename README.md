@@ -2,15 +2,15 @@
 We will look briefly at the LINUX command interpreter, called the SHELL, which, although not part of the operating system, makes heavy use of many operating system features and thus serves as a good example of how the system calls can be used. It is also the primary interface between a user sitting at his terminal and the operating system.
 Shell has standard input and output as its terminal. Shell is started when a user begins to login. To start a command a dollar sign is typed which indicates the user that the shell is ready to accept the command.
 
-## How it work
+## How it works
 1. take user input 
 2. allocate memory for user input 
 3. create a child process using fork () command 
-4. execute the input command if valid (in the child process). Parent will wait for the completion of child process 
+4. execute the input command is valid (in the child process). Parent will wait for the completion of the child process 
 5. child process uses execvp() to transform user input into Linux command, and execute it 
 6. Return to step 1 when success 
-7. Use if else for exception handling. Ex: Special case is “cd” command will not work with the C Unix Shell, allocation fail, fail to create child process, fail to execute Linux command... 
-8. The purpose of the program is running Linux system command using my own shell (c code) and practicing child and parent process in Linux Shell. User input is the parent process, Linux commands execute is the child process. Please look at my diagram for further verification:
+7. Use if-else for exception handling. Ex: Special case is “cd” command will not work with the C Unix Shell, allocation fail, fail to create a child process, fail to execute Linux command... 
+8. The purpose of the program is to run Linux system command using my shell (c code) and practicing the child and parent process in Linux Shell. User input is the parent process, Linux commands execute is the child process. Please look at my diagram for further verification:
 
 ![alt](https://github.com/jackyhuynh/linuxShell-app/blob/main/src/picture/Diagram.png)
 
@@ -18,16 +18,15 @@ Shell has standard input and output as its terminal. Shell is started when a use
 - C Programming
 - g++ compiler
 - readline.h
-- Mulithreading (pthread)
+- Multithreading (pthread.h)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 What things you need to install the software and how to install them
-- Command-Prompt for Visual Studio: Same go here. For this particular project, I highly recommend using Command-Prompt instead of the IDE.
-- Linux: Program can be run on Linux System (if you familiar with Linux command line). 
-
+- Command-Prompt for Visual Studio: Same goes here. For this particular project, I highly recommend using Command-Prompt instead of the IDE.
+- Linux: Program can be run on Linux System (if you are familiar with the Linux command line). 
 
 ### Installing
 
@@ -43,7 +42,7 @@ Linux Ubuntu 18.4 LTS
 ## Running the tests
 
 Explain how to run the automated tests for this system:
-* [Linux Compilers](https://askubuntu.com/questions/61408/what-is-a-command-to-compile-and-run-c-programs#:~:text=The%20simplest%20way%20to%20compile%20a%20C%2B%2B%20program,only%20compiler%20capable%20of%20compiling%20the%20Linux%20kernel.)- Locate the home folder that contain the program (by using the cd command). Call the g++ compiler and execute.
+* [Linux Compilers](https://askubuntu.com/questions/61408/what-is-a-command-to-compile-and-run-c-programs#:~:text=The%20simplest%20way%20to%20compile%20a%20C%2B%2B%20program,only%20compiler%20capable%20of%20compiling%20the%20Linux%20kernel.)- Locate the home folder that contains the program (by using the cd command). Call the g++ compiler and execute.
 * [Visual Studio Command Line](https://docs.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-160)
 
 ### Result
@@ -52,12 +51,12 @@ Explain how to run the automated tests for this system:
 
 ## Deployment
 
-Can be deploy to any embedded system without any problem. Can also make API or libary using this code. 
+Can be deployed to any embedded system without any problem. Can also make an API or library using this code. 
 
 ## Built With
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) - The full-featured integrated development environment (IDE) for Android, iOS, Windows, web, and cloud.
-* [.NET](https://dotnet.microsoft.com/download/dotnet-framework) -  Free. Cross-platform. Open source. A developer platform for building Internet of Thing(IOT), Microservices, Desktop, Cloud, Mobile, Machine Learning, Web, Game.
+* [.NET](https://dotnet.microsoft.com/download/dotnet-framework) -  Free. Cross-platform. Open-source. A developer platform for building the Internet of Things (IoT), Microservices, Desktop, Cloud, Mobile, Machine Learning, Web, Game.
 
 ## Contributing
 
@@ -82,7 +81,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* Hat tip to anyone who's code was used
 * Inspiration
 * etc
+
 
