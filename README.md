@@ -2,6 +2,8 @@
 We will look briefly at the LINUX command interpreter, called the SHELL, which, although not part of the operating system, makes heavy use of many operating system features and thus serves as a good example of how the system calls can be used. It is also the primary interface between a user sitting at his terminal and the operating system.
 Shell has standard input and output as its terminal. Shell is started when a user begins to login. To start a command a dollar sign is typed which indicates the user that the shell is ready to accept the command.
 
+![img](https://github.com/jackyhuynh/Linux-Shell/blob/main/images/Learn%20Linux%20Shell_0.jpg)
+
 ## How it works
 1. take user input 
 2. allocate memory for user input 
